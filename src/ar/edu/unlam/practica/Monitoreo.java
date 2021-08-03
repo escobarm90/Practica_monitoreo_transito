@@ -25,17 +25,8 @@ public class Monitoreo {
 		return this.vehiculos.size();
 	}
 	
-	public Boolean actualizarCoordenadas() throws CollitionException {
-		for(Vehiculo vehiculo: vehiculos) {
-			for(Vehiculo vehiculo2: vehiculos) {				
-					if(vehiculo.getPosicion().equals(vehiculo2.getPosicion())) {
-					throw new CollitionException("Choque");							
-					}
-				}
-			}return false;		
-		}
 	
-	public Boolean actualizarCoordenadas2() throws CollitionException {
+	public Boolean actualizarCoordenadas() throws CollitionException {
 		Iterator<Vehiculo> it = vehiculos.iterator();
 		while (it.hasNext()) {
 			Vehiculo vehiculo1 = it.next();

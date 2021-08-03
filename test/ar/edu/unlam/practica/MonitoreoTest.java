@@ -59,9 +59,8 @@ public class MonitoreoTest {
 		Vehiculo moto = new Moto("fgh765",c2);
 		centro.agregarVehiculoAlMonitoreo(moto);
 		centro.agregarVehiculoAlMonitoreo(auto);
-		centro.actualizarCoordenadas2();
-		//assertFalse(auto.getPosicion().equals(moto.getPosicion()));
-		//assertFalse(centro.compararCoordenadas(auto, moto));
+		centro.actualizarCoordenadas();
+	
 	}
 	
 }

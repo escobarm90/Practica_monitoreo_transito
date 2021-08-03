@@ -22,6 +22,5 @@ public abstract class Vehiculo implements Comparable<Vehiculo>{
 		return this.patente;
 	}
 
-
 	
 }
